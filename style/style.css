@@ -1,7 +1,10 @@
 html, body{
     padding: 0;
     margin: 0;
+    background-color: black;
 }
+
+/* Background video properties */
 
 #background-video{
     position: fixed;
@@ -9,4 +12,23 @@ html, body{
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+/* Page content properties */
+
+#menu{
+    display: flex;
+    justify-content: right;
+    align-items: stretch;
+    align-content: center;
+}
+
+#menu:before{
+    filter: blur(10px);
+}
+
+.menu-item{
+    padding: 0px 5px 0px 5px;
+    border-collapse: collapse;
+    color: white;
 }
