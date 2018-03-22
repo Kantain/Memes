@@ -1,3 +1,3 @@
 window.onload = function () {
-    document.querySelector('video').playbackRate = 2.0;
+    document.querySelector('video').playbackRate = 1.2;
 };
