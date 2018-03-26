@@ -1,4 +1,4 @@
-html, body{
+html, body {
     padding: 0;
     margin: 0;
     background-color: black;
@@ -6,29 +6,49 @@ html, body{
 
 /* Background video properties */
 
-#background-video{
+#background-image {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    opacity: 0.8;
+    top: 50px;
+    left: 0;
+    width: 100%;
 }
 
 /* Page content properties */
 
-#menu{
+#menu {
+    position: sticky;
+    top: 0;
+
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: stretch;
     align-content: center;
+
+    background-color: rgba(255,255,255,0.5);
 }
 
-#menu:before{
-    filter: blur(10px);
-}
+.menu-item {
+    padding: 5px 10px 5px 10px;
 
-.menu-item{
-    padding: 0px 5px 0px 5px;
     border-collapse: collapse;
+
+    color: black;
+    font-size: 25px;
+    font-family: "Impact";
+
+    transition: 0.1s ease;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+
+    padding-bottom: 0px;
+
+    border-bottom: 5px solid;
+    border-color: white;
+
     color: white;
+
+    transition: 0.1s ease;
 }
