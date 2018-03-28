@@ -5,9 +5,8 @@ html, body {
 }
 
 body{
-    background:   url(../resources/yuno.bmp) no-repeat, url(../resources/obsequious.png) no-repeat, url(../resources/gnee.png) no-repeat;
+    background: url(../resources/background.png) no-repeat;
     background-size: 100% auto;
-    height: 50px;
 
     .background-image {
         position: absolute;
@@ -32,31 +31,55 @@ body{
         align-content: center;
 
         background-color: rgba(255,255,255,0.5);
+
+        .menu-item {
+            padding: 5px 10px 5px 10px;
+
+            border-collapse: collapse;
+
+            color: black;
+            font-size: 25px;
+            font-family: "Impact";
+
+            transition: 0.1s ease;
+        }
+
+        .menu-item:hover{
+            cursor: pointer;
+
+            padding-bottom: 0px;
+
+            border-bottom: 5px solid;
+            border-color: white;
+
+            color: white;
+
+            transition: 0.1s ease;
+        }
     }
 
-    .menu-item {
-        padding: 5px 10px 5px 10px;
+    #display-img-meme{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
 
-        border-collapse: collapse;
-
-        color: black;
-        font-size: 25px;
-        font-family: "Impact";
-
-        transition: 0.1s ease;
+        .image-meme{
+            margin: 10px;
+            max-width:35%;
+            height: auto;
+        }
     }
 
-    .menu-item:hover{
-        cursor: pointer;
+    #display-video-meme{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        padding-bottom: 0px;
-
-        border-bottom: 5px solid;
-        border-color: white;
-
-        color: white;
-
-        transition: 0.1s ease;
+        .video-meme{
+            margin: 10px;
+            max-width:50%;
+            height: auto;
+        }
     }
-
 }
