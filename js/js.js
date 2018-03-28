@@ -8,3 +8,4 @@ window.onload = function () {
 		console.log(memes.name);
 	}
 }*/
+

@@ -24,10 +24,16 @@ function loadMemeImg(){
 		if(memes[i].extension == "jpg" || memes[i].extension == "png" ||memes[i].extension == "jpeg"){
 			img= document.createElement("img");
 			img.setAttribute("class","image-meme");
-		}
-		var link = memes[i].src + '.' + memes[i].extension;
-		img.setAttribute("src",link);
-		divMeme.appendChild(img);
+			var link = memes[i].src + '.' + memes[i].extension;
+		    img.setAttribute("src",link);
+		    //Permet de réaliser l'effet zoom
+		    img.setAttribute("width","30%");
+		    img.setAttribute("height","30%");
+		    a = document.createElement("a");
+		    a.setAttribute("href",link);
+		    a.appendChild(img);
+		}	
+		divMeme.appendChild(a);
 	}
 }
 
@@ -38,11 +44,19 @@ function loadVideoMeme(){
 		if(memes[i].extension == "mp4"){
 			vid= document.createElement("video");
 			vid.setAttribute("class","video-meme");
+			var link = memes[i].src + '.' + memes[i].extension;
+			vid.setAttribute("src",link);
+			vid.setAttribute("controls","true");
+
+			//Permet de réaliser l'effet zoom
+			vid.setAttribute("width","30%");
+			vid.setAttribute("height","30%");  
+			a = document.createElement("a");
+		    a.setAttribute("href",link);
+		    a.appendChild(vid);
 		}
-		var link = memes[i].src + '.' + memes[i].extension;
-		vid.setAttribute("src",link);
-		vid.setAttribute("controls","true");
-		divMeme.appendChild(vid);
+		
+		divMeme.appendChild(a);
 	}
 }
 
