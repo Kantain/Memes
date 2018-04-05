@@ -27,13 +27,9 @@ function loadMemeImg(){
 			var link = memes[i].src + '.' + memes[i].extension;
 		    img.setAttribute("src",link);
 		    //Permet de réaliser l'effet zoom
-		    img.setAttribute("width","30%");
-		    img.setAttribute("height","30%");
-		    a = document.createElement("a");
-		    a.setAttribute("href",link);
-		    a.appendChild(img);
-		}	
-		divMeme.appendChild(a);
+		    img.setAttribute("onclick","grandir(this)");
+		    divMeme.appendChild(img);
+		}
 	}
 }
 
@@ -49,14 +45,8 @@ function loadVideoMeme(){
 			vid.setAttribute("controls","true");
 
 			//Permet de réaliser l'effet zoom
-			vid.setAttribute("width","30%");
-			vid.setAttribute("height","30%");  
-			a = document.createElement("a");
-		    a.setAttribute("href",link);
-		    a.appendChild(vid);
+		    divMeme.appendChild(vid);
 		}
-		
-		divMeme.appendChild(a);
 	}
 }
 
