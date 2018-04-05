@@ -84,10 +84,10 @@ body{
     }
 
     .plan{
-        overflow: hidden;
         position: fixed;
-        transition: all 0.5s ease;
-        transition-timing-function: cubic-bezier(0,1,0.5,1);
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s ease;
         top: 0;
         left: 0;
         width: 100%;
@@ -101,9 +101,15 @@ body{
             transition: 0.5s ease;
             top: 20%;
             max-height: 700px;
-            height: 500px;
+            height: 50%;
             width: auto;
         }
+    }
+
+    .plan.ferme{
+        transition: visibility 0.5s, opacity 0.5s ease;
+        visibility: hidden;
+        opacity: 0;
     }
 
     footer{

@@ -1,4 +1,4 @@
-var memes =[
+/*var memes =[
 		{name:"Putin meme",src:"resources/putinmeme",extension:"jpg"},
 		{name:"Jesus meme",src:"resources/jesus_meme",extension:"jpg"},
 		{name:"Racist meme",src:"resources/racist_meme",extension:"jpg"},
@@ -62,4 +62,4 @@ function loadGifMeme(){
 		gif.setAttribute("src",link);
 		divMeme.appendChild(gif);
 	}
-}
+}*/
